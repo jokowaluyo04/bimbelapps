@@ -129,11 +129,29 @@
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Masukkan Password" required>
+        <div class="relative">
+            <input type="password" name="password" id="password" placeholder="Masukkan Password" required class="pr-10">
+            <span id="togglePassword" class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+                <i class="fas fa-eye" id="eyeIcon"></i>
+            </span>
+        </div>
+        <input type="checkbox" id="showPassword" style="display: none;">
       </div>
       <button type="submit" class="login-btn">Masuk</button>
     </form>
     <a href="{{ route('register') }}" class="register-link">Belum punya akun? Daftar di sini</a>
   </div>
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    togglePassword.addEventListener('click', function() {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        eyeIcon.classList.toggle('fa-eye');
+        eyeIcon.classList.toggle('fa-eye-slash');
+    });
+  </script>
 </body>
 </html>

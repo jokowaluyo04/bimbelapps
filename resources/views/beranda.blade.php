@@ -1,6 +1,6 @@
 @extends('sidebar')
 
-@section('title', 'Beranda')  
+@section('title', 'Beranda')
 
 @section('content')
 
@@ -20,7 +20,7 @@
             <div class="flex items-center mb-6">
                 <img src="https://img.icons8.com/ios-filled/80/4a90e2/student-male--v1.png" alt="Students" class="w-16 h-16 mr-4">
                 <div>
-                    <h3 class="text-4xl font-extrabold text-blue-500">243</h3>
+                    <h3 class="text-4xl font-extrabold text-blue-500">45</h3>
                     <p class="text-lg text-gray-700 font-semibold">Total Siswa</p>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <div class="flex items-center mb-6">
                 <img src="https://img.icons8.com/ios-filled/80/e57373/classroom.png" alt="Courses" class="w-16 h-16 mr-4">
                 <div>
-                    <h3 class="text-4xl font-extrabold text-pink-500">13</h3>
+                    <h3 class="text-4xl font-extrabold text-pink-500">3</h3>
                     <p class="text-lg text-gray-700 font-semibold">Total Kelas</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@
 
     <!-- Additional Section -->
     <div class="mt-12 bg-white p-6 rounded-xl shadow-lg">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Tentang Bimbel G109</h2>
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Bimbel G109</h2>
         <p class="text-gray-600">
             Kami menyediakan layanan pembelajaran terbaik untuk mendukung siswa mencapai prestasi maksimal. Dengan Pengajar yang berpengalaman, kami berkomitmen untuk memberikan pengalaman belajar yang efektif dan menyenangkan.
         </p>

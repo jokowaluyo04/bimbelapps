@@ -83,17 +83,17 @@ class KelasController extends Controller
 
     public function kelasPagi()
     {
-        return view('absensi-pagi');
+        return view('kelas-pagi');
     }
 
     public function kelasSore()
     {
-        return view('absensi-sore');
+        return view('kelas-sore');
     }
 
     public function kelasMalam()
     {
-        return view('absensi-malam');
+        return view('kelas-malam');
     }
 }
 

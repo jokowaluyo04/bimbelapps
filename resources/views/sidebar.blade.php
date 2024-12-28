@@ -104,8 +104,8 @@
             <div class="profile text-center mb-6">
                 <img src="https://img.icons8.com/?size=100&id=UN4eh7n0eLPR&format=png&color=000000/100"
                      alt="Profile Picture" class="mx-auto rounded-full mb-2">
-                <h2 class="text-lg font-semibold">Halo Siswa</h2>
-                <p class="text-yellow-300">Siswa</p>
+                <h2 class="text-lg font-semibold">Halo Pengajar</h2>
+                <p class="text-yellow-300">Pengajar</p>
             </div>
 
             <!-- Menu Links -->

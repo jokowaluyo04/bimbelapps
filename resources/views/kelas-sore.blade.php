@@ -16,7 +16,7 @@
         <form action="{{ route('absensi.store') }}" method="POST">
             @csrf
             <input type="hidden" name="kelas" value="sore">
-            
+
             <div class="overflow-x-auto">
                 <table class="min-w-full border-collapse">
                     <thead class="bg-yellow-500 text-white">
@@ -62,11 +62,11 @@
             </div>
 
             <div class="mt-6 flex justify-end gap-3">
-                <button type="button" onclick="window.location.href='{{ route('absensi') }}'" 
+                <button type="button" onclick="window.location.href='{{ route('absensi') }}'"
                     class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400">
                     Kembali
                 </button>
-                <button type="submit" 
+                <button type="submit"
                     class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
                     Simpan Absensi
                 </button>
@@ -74,4 +74,5 @@
         </form>
     </div>
 </div>
+<script src="{{ asset('js/kelas_sore.js') }}"></script>
 @endsection

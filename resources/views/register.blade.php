@@ -162,7 +162,7 @@
         <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Konfirmasi Password" required>
       </div>
       <div class="form-group">
-        <label for="role">Role</label>
+        <label for="role">Daftar Sebagai</label>
         <select name="role" id="role">
           <option value="siswa">Siswa</option>
           <option value="pengajar">Pengajar</option>

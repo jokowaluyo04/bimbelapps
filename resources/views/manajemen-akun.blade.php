@@ -9,7 +9,7 @@
         <div class="flex justify-between items-center mb-4">
             <h2 class="text-xl font-bold">Manajemen Akun</h2>
             <button onclick="showModal()" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
-                + Tambah Akun
+                + Edit Akun
             </button>
         </div>
 
@@ -38,11 +38,7 @@
                         </span>
                     </td>
                     <td class="p-2">
-                        <button onclick="showEditModal({{ json_encode($user) }})" 
-                                class="bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition duration-200 transform hover:scale-105">
-                            Edit
-                        </button>
-                        <button onclick="deleteUser({{ $user['id'] }})" 
+                        <button onclick="deleteUser({{ $user['id'] }})"
                                 class="bg-red-500 text-white py-1 px-3 rounded ml-4 hover:bg-red-600 transition duration-200 transform hover:scale-105">
                             Hapus
                         </button>
@@ -79,7 +75,7 @@
                     <label for="role" class="block text-gray-700">Role</label>
                     <select id="role" name="role" class="w-full mt-1 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500">
                         <option value="Pengelola">Pengelola</option>
-                        <option value="Guru">Guru</option>
+                        <option value="Pengajar">Pengajar</option>
                         <option value="Siswa">Siswa</option>
                     </select>
                 </div>
@@ -99,32 +95,6 @@
     </div>
 </div>
 
-<script>
-    function showModal() {
-        document.getElementById('modalTitle').textContent = 'Tambah Akun Baru';
-        document.getElementById('accountForm').reset();
-        document.getElementById('accountModal').classList.remove('hidden');
-    }
-
-    function showEditModal(user) {
-        document.getElementById('modalTitle').textContent = 'Edit Akun';
-        document.getElementById('nama').value = user.nama;
-        document.getElementById('username').value = user.username;
-        document.getElementById('role').value = user.role;
-        document.getElementById('status').value = user.status;
-        document.getElementById('password').value = '';
-        document.getElementById('accountModal').classList.remove('hidden');
-    }
-
-    function closeModal() {
-        document.getElementById('accountModal').classList.add('hidden');
-    }
-
-    function deleteUser(userId) {
-        if (confirm('Apakah Anda yakin ingin menghapus akun ini?')) {
-            // Tambahkan fungsi AJAX untuk menghapus akun di sini
-            alert('Akun dengan ID ' + userId + ' akan dihapus.');
-        }
-    }
-</script>
+<!-- Sertakan file JavaScript -->
+<script src="{{ asset('js/manajemen_akun.js') }}"></script>
 @endsection

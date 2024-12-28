@@ -16,7 +16,7 @@
         <form action="{{ route('absensi.store') }}" method="POST">
             @csrf
             <input type="hidden" name="kelas" value="pagi">
-            
+
             <div class="overflow-x-auto">
                 <table class="min-w-full border-collapse">
                     <thead class="bg-blue-500 text-white">
@@ -36,7 +36,7 @@
                             ['nis' => '2024003', 'nama_siswa' => 'Ahmad Rizki']
                         ];
                         @endphp
-                        
+
                         @foreach($siswa as $index => $s)
                         <tr class="border-b hover:bg-gray-50">
                             <td class="px-4 py-2">{{ $index + 1 }}</td>
@@ -72,11 +72,11 @@
             </div>
 
             <div class="mt-6 flex justify-end gap-3">
-                <a href="{{ route('absensi') }}" 
+                <a href="{{ route('absensi') }}"
                     class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400">
                     Kembali
                 </a>
-                <button type="submit" 
+                <button type="submit"
                     class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
                     Simpan Absensi
                 </button>
@@ -84,4 +84,6 @@
         </form>
     </div>
 </div>
+
+<script src="{{ asset('js/kelas_pagi.js') }}"></script>
 @endsection
